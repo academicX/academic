@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+// rem 单位换算：定为 75px 只是方便运算，750px-75px、640-64px、1080px-108px，如此类推
+$vm_fontsize: 75; // iPhone 6尺寸的根元素大小基准值
+
+/* 字体大小变量 */
+@function pxToRem($px) {
+    @return ($px / $vm_fontsize ) * 1rem;
+}

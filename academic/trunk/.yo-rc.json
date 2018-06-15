@@ -1,0 +1,14 @@
+{
+  "generator-huya-app": {
+    "viewConfig": {
+      "projectName": "1806room_embed",
+      "category": "web",
+      "antiHijack": true,
+      "noCustomBase": true,
+      "lib": "jquery",
+      "layout": "no",
+      "huyaHeaderFooter": false,
+      "serverWorker": true
+    }
+  }
+}

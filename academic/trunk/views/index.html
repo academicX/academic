@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="ie8" lang="zh-cmn-Hans"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="zh-cmn-Hans"><!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes"><!-- 删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"><!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+ 	<meta http-equiv="Window-target" content="_top">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>我是主页</title>
+			
+	<link rel="stylesheet" href="../css/pages/index.scss"><!--ignore-->
+	
+</head>
+<body>
+	
+  		 <!-- 公共头部，这里是引用公共组件 -->
+		<link rel="import" href="/widget/header/header.html?__inline">
+
+		 <!-- 主页主体内容，这里是引用本页组件 -->
+		 <link rel="import" href="/modules/index/container/container.html?__inline">
+
+
+  <script src="//a.msstatic.com/huya/main/lib/jq_ud_mod_a89a1a6.js"></script><!--ignore-->
+
+	<script>
+		require('modules/index')
+	</script>
+	
+</body>
+</html>

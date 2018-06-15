@@ -1,0 +1,50 @@
+// 变量
+@import "_variables";
+/* ==========================================================================
+	 Component: Thumbnail
+ ============================================================================ */
+.#{$ns}thumbnail {
+	display: block;
+	padding: 2px;
+	margin-bottom: 2rem;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	border-radius: 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.#{$ns}thumbnail > img,
+.#{$ns}thumbnail a > img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+.#{$ns}thumbnail a.#{$ns}thumbnail:hover,
+.#{$ns}thumbnail a.#{$ns}thumbnail:focus,
+.#{$ns}thumbnail a.#{$ns}thumbnail.active {
+	border-color: #0e90d2;
+	background-color: #ffffff;
+}
+img.#{$ns}thumbnail,
+.#{$ns}thumbnail > img,
+.#{$ns}thumbnail a > img {
+	max-width: 100%;
+	height: auto;
+}
+/* Image caption */
+.#{$ns}thumbnail-caption {
+	margin: 0;
+	padding: 0.8rem;
+	color: #333333;
+	font-weight: normal;
+}
+.#{$ns}thumbnail-caption *:last-child {
+	margin-bottom: 0;
+}
+.#{$ns}thumbnails {
+	margin-left: -0.5rem;
+	margin-right: -0.5rem;
+}
+.#{$ns}thumbnails > li {
+	padding: 0 .5rem 1rem .5rem;
+}

@@ -1,0 +1,26 @@
+// 变量
+@import "_variables";
+/* ==========================================================================
+	 Component: Image
+ ============================================================================ */
+/* Image thumbnails */
+.#{$ns}img-thumbnail {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	padding: 2px;
+	line-height: 1.6;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+	border-radius: 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.#{$ns}img-thumbnail.#{$ns}radius {
+	border-radius: 2px;
+}
+.#{$ns}img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}

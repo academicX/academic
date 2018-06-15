@@ -1,0 +1,221 @@
+// 变量
+@import "_variables";
+/* ==========================================================================
+	 Component: Table
+ ============================================================================ */
+table {
+	max-width: 100%;
+	background-color: transparent;
+	empty-cells: show;
+}
+table code {
+	white-space: normal;
+}
+th {
+	text-align: left;
+}
+.#{$ns}table {
+	width: 100%;
+	margin-bottom: 1.6rem;
+	border-spacing: 0;
+	border-collapse: separate;
+}
+.#{$ns}table > thead > tr > th,
+.#{$ns}table > tbody > tr > th,
+.#{$ns}table > tfoot > tr > th,
+.#{$ns}table > thead > tr > td,
+.#{$ns}table > tbody > tr > td,
+.#{$ns}table > tfoot > tr > td {
+	padding: 0.7rem;
+	line-height: 1.6;
+	vertical-align: top;
+	border-top: 1px solid #dddddd;
+}
+.#{$ns}table > thead > tr > th {
+	vertical-align: bottom;
+	border-bottom: 1px solid #dddddd;
+}
+.#{$ns}table > caption + thead > tr:first-child > th,
+.#{$ns}table > colgroup + thead > tr:first-child > th,
+.#{$ns}table > thead:first-child > tr:first-child > th,
+.#{$ns}table > caption + thead > tr:first-child > td,
+.#{$ns}table > colgroup + thead > tr:first-child > td,
+.#{$ns}table > thead:first-child > tr:first-child > td {
+	border-top: 0;
+}
+.#{$ns}table > tbody + tbody tr:first-child td {
+	border-top: 2px solid #dddddd;
+}
+/* Bordered version */
+.#{$ns}table-bordered {
+	border: 1px solid #dddddd;
+	border-left: none;
+}
+.#{$ns}table-bordered > thead > tr > th,
+.#{$ns}table-bordered > tbody > tr > th,
+.#{$ns}table-bordered > tfoot > tr > th,
+.#{$ns}table-bordered > thead > tr > td,
+.#{$ns}table-bordered > tbody > tr > td,
+.#{$ns}table-bordered > tfoot > tr > td {
+	border-left: 1px solid #dddddd;
+	/*&:first-child {
+					border-left: none;
+				}*/
+}
+.#{$ns}table-bordered > tbody > tr:first-child > th,
+.#{$ns}table-bordered > tbody > tr:first-child > td {
+	border-top: none;
+}
+.#{$ns}table-bordered > thead + tbody > tr:first-child > th,
+.#{$ns}table-bordered > thead + tbody > tr:first-child > td {
+	border-top: 1px solid #dddddd;
+}
+/* Border-radius version */
+.#{$ns}table-radius {
+	border: 1px solid #dddddd;
+	border-radius: 2px;
+}
+.#{$ns}table-radius > thead > tr:first-child > th:first-child,
+.#{$ns}table-radius > thead > tr:first-child > td:first-child {
+	border-top-left-radius: 2px;
+	border-left: none;
+}
+.#{$ns}table-radius > thead > tr:first-child > th:last-child,
+.#{$ns}table-radius > thead > tr:first-child > td:last-child {
+	border-top-right-radius: 2px;
+	border-right: none;
+}
+.#{$ns}table-radius > tbody > tr > th:first-child,
+.#{$ns}table-radius > tbody > tr > td:first-child {
+	border-left: none;
+}
+.#{$ns}table-radius > tbody > tr > th:last-child,
+.#{$ns}table-radius > tbody > tr > td:last-child {
+	border-right: none;
+}
+.#{$ns}table-radius > tbody > tr:last-child > th,
+.#{$ns}table-radius > tbody > tr:last-child > td {
+	border-bottom: none;
+}
+.#{$ns}table-radius > tbody > tr:last-child > th:first-child,
+.#{$ns}table-radius > tbody > tr:last-child > td:first-child {
+	border-bottom-left-radius: 2px;
+}
+.#{$ns}table-radius > tbody > tr:last-child > th:last-child,
+.#{$ns}table-radius > tbody > tr:last-child > td:last-child {
+	border-bottom-right-radius: 2px;
+}
+/* Zebra-striping */
+.#{$ns}table-striped > tbody > tr:nth-child(odd) > td,
+.#{$ns}table-striped > tbody > tr:nth-child(odd) > th {
+	background-color: #f9f9f9;
+}
+/* Hover effect */
+.#{$ns}table-hover > tbody > tr:hover > td,
+.#{$ns}table-hover > tbody > tr:hover > th {
+	background-color: #e9e9e9;
+}
+.#{$ns}table-compact > thead > tr > th,
+.#{$ns}table-compact > tbody > tr > th,
+.#{$ns}table-compact > tfoot > tr > th,
+.#{$ns}table-compact > thead > tr > td,
+.#{$ns}table-compact > tbody > tr > td,
+.#{$ns}table-compact > tfoot > tr > td {
+	padding: 0.4rem;
+}
+.#{$ns}table-centered > thead > tr > th,
+.#{$ns}table-centered > tbody > tr > th,
+.#{$ns}table-centered > tfoot > tr > th,
+.#{$ns}table-centered > thead > tr > td,
+.#{$ns}table-centered > tbody > tr > td,
+.#{$ns}table-centered > tfoot > tr > td {
+	text-align: center;
+}
+.#{$ns}table > thead > tr > td.#{$ns}active,
+.#{$ns}table > tbody > tr > td.#{$ns}active,
+.#{$ns}table > tfoot > tr > td.#{$ns}active,
+.#{$ns}table > thead > tr > th.#{$ns}active,
+.#{$ns}table > tbody > tr > th.#{$ns}active,
+.#{$ns}table > tfoot > tr > th.#{$ns}active,
+.#{$ns}table > thead > tr.#{$ns}active > td,
+.#{$ns}table > tbody > tr.#{$ns}active > td,
+.#{$ns}table > tfoot > tr.#{$ns}active > td,
+.#{$ns}table > thead > tr.#{$ns}active > th,
+.#{$ns}table > tbody > tr.#{$ns}active > th,
+.#{$ns}table > tfoot > tr.#{$ns}active > th {
+	background-color: #ffffdd;
+}
+.#{$ns}table > thead > tr > td.#{$ns}disabled,
+.#{$ns}table > tbody > tr > td.#{$ns}disabled,
+.#{$ns}table > tfoot > tr > td.#{$ns}disabled,
+.#{$ns}table > thead > tr > th.#{$ns}disabled,
+.#{$ns}table > tbody > tr > th.#{$ns}disabled,
+.#{$ns}table > tfoot > tr > th.#{$ns}disabled,
+.#{$ns}table > thead > tr.#{$ns}disabled > td,
+.#{$ns}table > tbody > tr.#{$ns}disabled > td,
+.#{$ns}table > tfoot > tr.#{$ns}disabled > td,
+.#{$ns}table > thead > tr.#{$ns}disabled > th,
+.#{$ns}table > tbody > tr.#{$ns}disabled > th,
+.#{$ns}table > tfoot > tr.#{$ns}disabled > th {
+	color: #999999;
+}
+.#{$ns}table > thead > tr > td.#{$ns}primary,
+.#{$ns}table > tbody > tr > td.#{$ns}primary,
+.#{$ns}table > tfoot > tr > td.#{$ns}primary,
+.#{$ns}table > thead > tr > th.#{$ns}primary,
+.#{$ns}table > tbody > tr > th.#{$ns}primary,
+.#{$ns}table > tfoot > tr > th.#{$ns}primary,
+.#{$ns}table > thead > tr.#{$ns}primary > td,
+.#{$ns}table > tbody > tr.#{$ns}primary > td,
+.#{$ns}table > tfoot > tr.#{$ns}primary > td,
+.#{$ns}table > thead > tr.#{$ns}primary > th,
+.#{$ns}table > tbody > tr.#{$ns}primary > th,
+.#{$ns}table > tfoot > tr.#{$ns}primary > th {
+	color: #0b76ac;
+	background-color: rgba(14, 144, 210, 0.115);
+}
+.#{$ns}table > thead > tr > td.#{$ns}success,
+.#{$ns}table > tbody > tr > td.#{$ns}success,
+.#{$ns}table > tfoot > tr > td.#{$ns}success,
+.#{$ns}table > thead > tr > th.#{$ns}success,
+.#{$ns}table > tbody > tr > th.#{$ns}success,
+.#{$ns}table > tfoot > tr > th.#{$ns}success,
+.#{$ns}table > thead > tr.#{$ns}success > td,
+.#{$ns}table > tbody > tr.#{$ns}success > td,
+.#{$ns}table > tfoot > tr.#{$ns}success > td,
+.#{$ns}table > thead > tr.#{$ns}success > th,
+.#{$ns}table > tbody > tr.#{$ns}success > th,
+.#{$ns}table > tfoot > tr.#{$ns}success > th {
+	color: #5eb95e;
+	background-color: rgba(94, 185, 94, 0.115);
+}
+.#{$ns}table > thead > tr > td.#{$ns}warning,
+.#{$ns}table > tbody > tr > td.#{$ns}warning,
+.#{$ns}table > tfoot > tr > td.#{$ns}warning,
+.#{$ns}table > thead > tr > th.#{$ns}warning,
+.#{$ns}table > tbody > tr > th.#{$ns}warning,
+.#{$ns}table > tfoot > tr > th.#{$ns}warning,
+.#{$ns}table > thead > tr.#{$ns}warning > td,
+.#{$ns}table > tbody > tr.#{$ns}warning > td,
+.#{$ns}table > tfoot > tr.#{$ns}warning > td,
+.#{$ns}table > thead > tr.#{$ns}warning > th,
+.#{$ns}table > tbody > tr.#{$ns}warning > th,
+.#{$ns}table > tfoot > tr.#{$ns}warning > th {
+	color: #f37b1d;
+	background-color: rgba(243, 123, 29, 0.115);
+}
+.#{$ns}table > thead > tr > td.#{$ns}danger,
+.#{$ns}table > tbody > tr > td.#{$ns}danger,
+.#{$ns}table > tfoot > tr > td.#{$ns}danger,
+.#{$ns}table > thead > tr > th.#{$ns}danger,
+.#{$ns}table > tbody > tr > th.#{$ns}danger,
+.#{$ns}table > tfoot > tr > th.#{$ns}danger,
+.#{$ns}table > thead > tr.#{$ns}danger > td,
+.#{$ns}table > tbody > tr.#{$ns}danger > td,
+.#{$ns}table > tfoot > tr.#{$ns}danger > td,
+.#{$ns}table > thead > tr.#{$ns}danger > th,
+.#{$ns}table > tbody > tr.#{$ns}danger > th,
+.#{$ns}table > tfoot > tr.#{$ns}danger > th {
+	color: #dd514c;
+	background-color: rgba(221, 81, 76, 0.115);
+}

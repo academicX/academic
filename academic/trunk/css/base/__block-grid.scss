@@ -1,0 +1,354 @@
+// 变量
+@import "_variables";
+/* ==========================================================================
+	 Component: AVG Grid
+ ============================================================================ */
+[class*="#{$ns}avg-"] {
+	display: block;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+[class*="#{$ns}avg-"]:before,
+[class*="#{$ns}avg-"]:after {
+	content: " ";
+	display: table;
+}
+[class*="#{$ns}avg-"]:after {
+	clear: both;
+}
+[class*="#{$ns}avg-"] > li {
+	display: block;
+	height: auto;
+	float: left;
+}
+@media only screen {
+	.#{$ns}avg-sm-1 > li {
+		width: 100%;
+	}
+	.#{$ns}avg-sm-1 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-1 > li:nth-of-type(1n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-2 > li {
+		width: 50%;
+	}
+	.#{$ns}avg-sm-2 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-2 > li:nth-of-type(2n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-3 > li {
+		width: 33.33333333%;
+	}
+	.#{$ns}avg-sm-3 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-3 > li:nth-of-type(3n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-4 > li {
+		width: 25%;
+	}
+	.#{$ns}avg-sm-4 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-4 > li:nth-of-type(4n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-5 > li {
+		width: 20%;
+	}
+	.#{$ns}avg-sm-5 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-5 > li:nth-of-type(5n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-6 > li {
+		width: 16.66666667%;
+	}
+	.#{$ns}avg-sm-6 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-6 > li:nth-of-type(6n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-7 > li {
+		width: 14.28571429%;
+	}
+	.#{$ns}avg-sm-7 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-7 > li:nth-of-type(7n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-8 > li {
+		width: 12.5%;
+	}
+	.#{$ns}avg-sm-8 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-8 > li:nth-of-type(8n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-9 > li {
+		width: 11.11111111%;
+	}
+	.#{$ns}avg-sm-9 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-9 > li:nth-of-type(9n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-10 > li {
+		width: 10%;
+	}
+	.#{$ns}avg-sm-10 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-10 > li:nth-of-type(10n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-11 > li {
+		width: 9.09090909%;
+	}
+	.#{$ns}avg-sm-11 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-11 > li:nth-of-type(11n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-sm-12 > li {
+		width: 8.33333333%;
+	}
+	.#{$ns}avg-sm-12 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-sm-12 > li:nth-of-type(12n + 1) {
+		clear: both;
+	}
+}
+@media only screen and (min-width:641px) {
+	.#{$ns}avg-md-1 > li {
+		width: 100%;
+	}
+	.#{$ns}avg-md-1 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-1 > li:nth-of-type(1n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-2 > li {
+		width: 50%;
+	}
+	.#{$ns}avg-md-2 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-2 > li:nth-of-type(2n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-3 > li {
+		width: 33.33333333%;
+	}
+	.#{$ns}avg-md-3 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-3 > li:nth-of-type(3n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-4 > li {
+		width: 25%;
+	}
+	.#{$ns}avg-md-4 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-4 > li:nth-of-type(4n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-5 > li {
+		width: 20%;
+	}
+	.#{$ns}avg-md-5 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-5 > li:nth-of-type(5n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-6 > li {
+		width: 16.66666667%;
+	}
+	.#{$ns}avg-md-6 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-6 > li:nth-of-type(6n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-7 > li {
+		width: 14.28571429%;
+	}
+	.#{$ns}avg-md-7 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-7 > li:nth-of-type(7n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-8 > li {
+		width: 12.5%;
+	}
+	.#{$ns}avg-md-8 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-8 > li:nth-of-type(8n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-9 > li {
+		width: 11.11111111%;
+	}
+	.#{$ns}avg-md-9 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-9 > li:nth-of-type(9n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-10 > li {
+		width: 10%;
+	}
+	.#{$ns}avg-md-10 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-10 > li:nth-of-type(10n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-11 > li {
+		width: 9.09090909%;
+	}
+	.#{$ns}avg-md-11 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-11 > li:nth-of-type(11n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-md-12 > li {
+		width: 8.33333333%;
+	}
+	.#{$ns}avg-md-12 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-md-12 > li:nth-of-type(12n + 1) {
+		clear: both;
+	}
+}
+@media only screen and (min-width:1025px) {
+	.#{$ns}avg-lg-1 > li {
+		width: 100%;
+	}
+	.#{$ns}avg-lg-1 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-1 > li:nth-of-type(1n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-2 > li {
+		width: 50%;
+	}
+	.#{$ns}avg-lg-2 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-2 > li:nth-of-type(2n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-3 > li {
+		width: 33.33333333%;
+	}
+	.#{$ns}avg-lg-3 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-3 > li:nth-of-type(3n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-4 > li {
+		width: 25%;
+	}
+	.#{$ns}avg-lg-4 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-4 > li:nth-of-type(4n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-5 > li {
+		width: 20%;
+	}
+	.#{$ns}avg-lg-5 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-5 > li:nth-of-type(5n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-6 > li {
+		width: 16.66666667%;
+	}
+	.#{$ns}avg-lg-6 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-6 > li:nth-of-type(6n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-7 > li {
+		width: 14.28571429%;
+	}
+	.#{$ns}avg-lg-7 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-7 > li:nth-of-type(7n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-8 > li {
+		width: 12.5%;
+	}
+	.#{$ns}avg-lg-8 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-8 > li:nth-of-type(8n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-9 > li {
+		width: 11.11111111%;
+	}
+	.#{$ns}avg-lg-9 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-9 > li:nth-of-type(9n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-10 > li {
+		width: 10%;
+	}
+	.#{$ns}avg-lg-10 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-10 > li:nth-of-type(10n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-11 > li {
+		width: 9.09090909%;
+	}
+	.#{$ns}avg-lg-11 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-11 > li:nth-of-type(11n + 1) {
+		clear: both;
+	}
+	.#{$ns}avg-lg-12 > li {
+		width: 8.33333333%;
+	}
+	.#{$ns}avg-lg-12 > li:nth-of-type(n) {
+		clear: none;
+	}
+	.#{$ns}avg-lg-12 > li:nth-of-type(12n + 1) {
+		clear: both;
+	}
+}

@@ -1,0 +1,412 @@
+// 变量
+@import "_variables";
+/* ==========================================================================
+	 Component: Form
+ ============================================================================ */
+/* Normalize */
+label {
+	display: inline-block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+input[type="search"] {
+	-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+	margin: 4px 0 0;
+	margin-top: 1px \9;
+	/* IE8-9 */
+	line-height: normal;
+}
+input[type="file"] {
+	display: block;
+}
+select[multiple],
+select[size] {
+	height: auto;
+}
+select optgroup {
+	font-size: inherit;
+	font-style: inherit;
+	font-family: inherit;
+}
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+	outline: thin dotted;
+	outline: 1px auto -webkit-focus-ring-color;
+	outline-offset: -2px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	height: auto;
+}
+output {
+	display: block;
+	padding-top: 1.6rem;
+	font-size: 1.6rem;
+	line-height: 1.6;
+	color: #555555;
+	vertical-align: middle;
+}
+/* Common form controls */
+.#{$ns}form select,
+.#{$ns}form textarea,
+.#{$ns}form input[type="text"],
+.#{$ns}form input[type="password"],
+.#{$ns}form input[type="datetime"],
+.#{$ns}form input[type="datetime-local"],
+.#{$ns}form input[type="date"],
+.#{$ns}form input[type="month"],
+.#{$ns}form input[type="time"],
+.#{$ns}form input[type="week"],
+.#{$ns}form input[type="number"],
+.#{$ns}form input[type="email"],
+.#{$ns}form input[type="url"],
+.#{$ns}form input[type="search"],
+.#{$ns}form input[type="tel"],
+.#{$ns}form input[type="color"],
+.#{$ns}form-field {
+	display: block;
+	width: 100%;
+	padding: 0.5em;
+	font-size: 1.6rem;
+	line-height: 1.2;
+	color: #555555;
+	vertical-align: middle;
+	background-color: #ffffff;
+	background-image: none;
+	border: 1px solid #cccccc;
+	border-radius: 0;
+	-webkit-appearance: none;
+	-webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+					transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.#{$ns}form select:focus,
+.#{$ns}form textarea:focus,
+.#{$ns}form input[type="text"]:focus,
+.#{$ns}form input[type="password"]:focus,
+.#{$ns}form input[type="datetime"]:focus,
+.#{$ns}form input[type="datetime-local"]:focus,
+.#{$ns}form input[type="date"]:focus,
+.#{$ns}form input[type="month"]:focus,
+.#{$ns}form input[type="time"]:focus,
+.#{$ns}form input[type="week"]:focus,
+.#{$ns}form input[type="number"]:focus,
+.#{$ns}form input[type="email"]:focus,
+.#{$ns}form input[type="url"]:focus,
+.#{$ns}form input[type="search"]:focus,
+.#{$ns}form input[type="tel"]:focus,
+.#{$ns}form input[type="color"]:focus,
+.#{$ns}form-field:focus {
+	background-color: #fefffe;
+	border-color: #3bb4f2;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59, 180, 242, 0.3);
+					box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 5px rgba(59, 180, 242, 0.3);
+}
+.#{$ns}form select::-webkit-input-placeholder,
+.#{$ns}form textarea::-webkit-input-placeholder,
+.#{$ns}form input[type="text"]::-webkit-input-placeholder,
+.#{$ns}form input[type="password"]::-webkit-input-placeholder,
+.#{$ns}form input[type="datetime"]::-webkit-input-placeholder,
+.#{$ns}form input[type="datetime-local"]::-webkit-input-placeholder,
+.#{$ns}form input[type="date"]::-webkit-input-placeholder,
+.#{$ns}form input[type="month"]::-webkit-input-placeholder,
+.#{$ns}form input[type="time"]::-webkit-input-placeholder,
+.#{$ns}form input[type="week"]::-webkit-input-placeholder,
+.#{$ns}form input[type="number"]::-webkit-input-placeholder,
+.#{$ns}form input[type="email"]::-webkit-input-placeholder,
+.#{$ns}form input[type="url"]::-webkit-input-placeholder,
+.#{$ns}form input[type="search"]::-webkit-input-placeholder,
+.#{$ns}form input[type="tel"]::-webkit-input-placeholder,
+.#{$ns}form input[type="color"]::-webkit-input-placeholder,
+.#{$ns}form-field::-webkit-input-placeholder {
+	color: #999999;
+}
+.#{$ns}form select::-moz-placeholder,
+.#{$ns}form textarea::-moz-placeholder,
+.#{$ns}form input[type="text"]::-moz-placeholder,
+.#{$ns}form input[type="password"]::-moz-placeholder,
+.#{$ns}form input[type="datetime"]::-moz-placeholder,
+.#{$ns}form input[type="datetime-local"]::-moz-placeholder,
+.#{$ns}form input[type="date"]::-moz-placeholder,
+.#{$ns}form input[type="month"]::-moz-placeholder,
+.#{$ns}form input[type="time"]::-moz-placeholder,
+.#{$ns}form input[type="week"]::-moz-placeholder,
+.#{$ns}form input[type="number"]::-moz-placeholder,
+.#{$ns}form input[type="email"]::-moz-placeholder,
+.#{$ns}form input[type="url"]::-moz-placeholder,
+.#{$ns}form input[type="search"]::-moz-placeholder,
+.#{$ns}form input[type="tel"]::-moz-placeholder,
+.#{$ns}form input[type="color"]::-moz-placeholder,
+.#{$ns}form-field::-moz-placeholder {
+	color: #999999;
+}
+.#{$ns}form select:-ms-input-placeholder,
+.#{$ns}form textarea:-ms-input-placeholder,
+.#{$ns}form input[type="text"]:-ms-input-placeholder,
+.#{$ns}form input[type="password"]:-ms-input-placeholder,
+.#{$ns}form input[type="datetime"]:-ms-input-placeholder,
+.#{$ns}form input[type="datetime-local"]:-ms-input-placeholder,
+.#{$ns}form input[type="date"]:-ms-input-placeholder,
+.#{$ns}form input[type="month"]:-ms-input-placeholder,
+.#{$ns}form input[type="time"]:-ms-input-placeholder,
+.#{$ns}form input[type="week"]:-ms-input-placeholder,
+.#{$ns}form input[type="number"]:-ms-input-placeholder,
+.#{$ns}form input[type="email"]:-ms-input-placeholder,
+.#{$ns}form input[type="url"]:-ms-input-placeholder,
+.#{$ns}form input[type="search"]:-ms-input-placeholder,
+.#{$ns}form input[type="tel"]:-ms-input-placeholder,
+.#{$ns}form input[type="color"]:-ms-input-placeholder,
+.#{$ns}form-field:-ms-input-placeholder {
+	color: #999999;
+}
+.#{$ns}form select::placeholder,
+.#{$ns}form textarea::placeholder,
+.#{$ns}form input[type="text"]::placeholder,
+.#{$ns}form input[type="password"]::placeholder,
+.#{$ns}form input[type="datetime"]::placeholder,
+.#{$ns}form input[type="datetime-local"]::placeholder,
+.#{$ns}form input[type="date"]::placeholder,
+.#{$ns}form input[type="month"]::placeholder,
+.#{$ns}form input[type="time"]::placeholder,
+.#{$ns}form input[type="week"]::placeholder,
+.#{$ns}form input[type="number"]::placeholder,
+.#{$ns}form input[type="email"]::placeholder,
+.#{$ns}form input[type="url"]::placeholder,
+.#{$ns}form input[type="search"]::placeholder,
+.#{$ns}form input[type="tel"]::placeholder,
+.#{$ns}form input[type="color"]::placeholder,
+.#{$ns}form-field::placeholder {
+	color: #999999;
+}
+.#{$ns}form select::-moz-placeholder,
+.#{$ns}form textarea::-moz-placeholder,
+.#{$ns}form input[type="text"]::-moz-placeholder,
+.#{$ns}form input[type="password"]::-moz-placeholder,
+.#{$ns}form input[type="datetime"]::-moz-placeholder,
+.#{$ns}form input[type="datetime-local"]::-moz-placeholder,
+.#{$ns}form input[type="date"]::-moz-placeholder,
+.#{$ns}form input[type="month"]::-moz-placeholder,
+.#{$ns}form input[type="time"]::-moz-placeholder,
+.#{$ns}form input[type="week"]::-moz-placeholder,
+.#{$ns}form input[type="number"]::-moz-placeholder,
+.#{$ns}form input[type="email"]::-moz-placeholder,
+.#{$ns}form input[type="url"]::-moz-placeholder,
+.#{$ns}form input[type="search"]::-moz-placeholder,
+.#{$ns}form input[type="tel"]::-moz-placeholder,
+.#{$ns}form input[type="color"]::-moz-placeholder,
+.#{$ns}form-field::-moz-placeholder {
+	opacity: 1;
+}
+.#{$ns}form select.#{$ns}radius,
+.#{$ns}form textarea.#{$ns}radius,
+.#{$ns}form input[type="text"].#{$ns}radius,
+.#{$ns}form input[type="password"].#{$ns}radius,
+.#{$ns}form input[type="datetime"].#{$ns}radius,
+.#{$ns}form input[type="datetime-local"].#{$ns}radius,
+.#{$ns}form input[type="date"].#{$ns}radius,
+.#{$ns}form input[type="month"].#{$ns}radius,
+.#{$ns}form input[type="time"].#{$ns}radius,
+.#{$ns}form input[type="week"].#{$ns}radius,
+.#{$ns}form input[type="number"].#{$ns}radius,
+.#{$ns}form input[type="email"].#{$ns}radius,
+.#{$ns}form input[type="url"].#{$ns}radius,
+.#{$ns}form input[type="search"].#{$ns}radius,
+.#{$ns}form input[type="tel"].#{$ns}radius,
+.#{$ns}form input[type="color"].#{$ns}radius,
+.#{$ns}form-field.#{$ns}radius {
+	border-radius: 2px;
+}
+.#{$ns}form select.#{$ns}round,
+.#{$ns}form textarea.#{$ns}round,
+.#{$ns}form input[type="text"].#{$ns}round,
+.#{$ns}form input[type="password"].#{$ns}round,
+.#{$ns}form input[type="datetime"].#{$ns}round,
+.#{$ns}form input[type="datetime-local"].#{$ns}round,
+.#{$ns}form input[type="date"].#{$ns}round,
+.#{$ns}form input[type="month"].#{$ns}round,
+.#{$ns}form input[type="time"].#{$ns}round,
+.#{$ns}form input[type="week"].#{$ns}round,
+.#{$ns}form input[type="number"].#{$ns}round,
+.#{$ns}form input[type="email"].#{$ns}round,
+.#{$ns}form input[type="url"].#{$ns}round,
+.#{$ns}form input[type="search"].#{$ns}round,
+.#{$ns}form input[type="tel"].#{$ns}round,
+.#{$ns}form input[type="color"].#{$ns}round,
+.#{$ns}form-field.#{$ns}round {
+	border-radius: 1000px;
+}
+.#{$ns}form textarea,
+.#{$ns}form select[multiple],
+.#{$ns}form select[size] {
+	height: auto;
+}
+.#{$ns}form select {
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	-webkit-border-radius: 0;
+	background: #ffffff url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+') no-repeat 100% center;
+}
+.#{$ns}form select[multiple="multiple"] {
+	background-image: none;
+}
+/* help text */
+.#{$ns}form-help {
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #999999;
+	font-size: 1.3rem;
+}
+/* form group */
+.#{$ns}form-group {
+	margin-bottom: 1.5rem;
+}
+/* 文本域 */
+.#{$ns}form-file {
+	position: relative;
+	overflow: hidden;
+}
+.#{$ns}form-file input[type="file"] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+	font-size: 50rem;
+}
+/**
+ * Checkboxes and radios
+ * Indent the labels to position radios/checkboxes as hanging controls.
+*/
+.#{$ns}radio,
+.#{$ns}checkbox {
+	display: block;
+	min-height: 1.92rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	vertical-align: middle;
+}
+.#{$ns}radio label,
+.#{$ns}checkbox label {
+	display: inline;
+	margin-bottom: 0;
+	font-weight: normal;
+	cursor: pointer;
+}
+.#{$ns}radio input[type="radio"],
+.#{$ns}radio-inline input[type="radio"],
+.#{$ns}checkbox input[type="checkbox"],
+.#{$ns}checkbox-inline input[type="checkbox"] {
+	float: left;
+	margin-left: -20px;
+	outline: none;
+}
+.#{$ns}radio + .#{$ns}radio,
+.#{$ns}checkbox + .#{$ns}checkbox {
+	margin-top: -5px;
+}
+/* Radios and checkboxes inline */
+.#{$ns}radio-inline,
+.#{$ns}checkbox-inline {
+	display: inline-block;
+	padding-left: 20px;
+	margin-bottom: 0;
+	vertical-align: middle;
+	font-weight: normal;
+	cursor: pointer;
+}
+.#{$ns}radio-inline + .#{$ns}radio-inline,
+.#{$ns}checkbox-inline + .#{$ns}checkbox-inline {
+	margin-top: 0;
+	margin-left: 10px;
+}
+
+
+
+/* 水平 forms */
+.#{$ns}form-horizontal .#{$ns}form-label,
+.#{$ns}form-horizontal .#{$ns}radio,
+.#{$ns}form-horizontal .#{$ns}checkbox,
+.#{$ns}form-horizontal .#{$ns}radio-inline,
+.#{$ns}form-horizontal .#{$ns}checkbox-inline {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0.6em;
+}
+.#{$ns}form-horizontal .#{$ns}form-group:before,
+.#{$ns}form-horizontal .#{$ns}form-group:after {
+	content: " ";
+	display: table;
+}
+.#{$ns}form-horizontal .#{$ns}form-group:after {
+	clear: both;
+}
+@media only screen and (min-width:641px) {
+	.#{$ns}form-horizontal .#{$ns}form-label {
+		text-align: right;
+	}
+}
+
+/* 行内排列 */
+@media only screen and (min-width:641px) {
+	.#{$ns}form-inline .#{$ns}form-group {
+		display: inline-block;
+		margin-bottom: 0;
+		vertical-align: middle;
+	}
+	.#{$ns}form-inline .#{$ns}form-field {
+		display: inline-block;
+		width: auto;
+		vertical-align: middle;
+	}
+	.#{$ns}form-inline .#{$ns}input-group {
+		display: inline-table;
+		vertical-align: middle;
+	}
+	.#{$ns}form-inline .#{$ns}input-group .#{$ns}input-group-label,
+	.#{$ns}form-inline .#{$ns}input-group .#{$ns}input-group-btn,
+	.#{$ns}form-inline .#{$ns}input-group .#{$ns}form-label {
+		width: auto;
+	}
+	.#{$ns}form-inline .#{$ns}input-group > .#{$ns}form-field {
+		width: 100%;
+	}
+	.#{$ns}form-inline .#{$ns}form-label {
+		margin-bottom: 0;
+		vertical-align: middle;
+	}
+	.#{$ns}form-inline .#{$ns}radio,
+	.#{$ns}form-inline .#{$ns}checkbox {
+		display: inline-block;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-left: 0;
+		vertical-align: middle;
+	}
+	.#{$ns}form-inline .#{$ns}radio input[type="radio"],
+	.#{$ns}form-inline .#{$ns}checkbox input[type="checkbox"] {
+		float: none;
+		margin-left: 0;
+	}
+}
+
+
+.#{$ns}checkbox,
+.#{$ns}radio,
+.#{$ns}checkbox-inline,
+.#{$ns}radio-inline {
+	padding-left: 22px;
+	position: relative;
+	-webkit-transition: color .25s linear;
+					transition: color .25s linear;
+	font-size: 14px;
+	line-height: 1.5;
+}

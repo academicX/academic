@@ -1,0 +1,166 @@
+// 变量
+@import "_variables";
+
+/* ==========================================================================
+	 Component: Utility
+ ============================================================================ */
+.#{$ns}scrollable-horizontal {
+	width: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-overflow-scrolling: touch;
+}
+.#{$ns}scrollable-vertical {
+	height: 240px;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	resize: vertical;
+}
+/* Border-radius*/
+.#{$ns}square {
+	border-radius: 0;
+}
+.#{$ns}radius {
+	border-radius: 2px;
+}
+.#{$ns}round {
+	border-radius: 1000px;
+}
+.#{$ns}circle {
+	border-radius: 50%;
+}
+/* Float blocks*/
+.#{$ns}cf:before,
+.#{$ns}cf:after {
+	content: " ";
+	display: table;
+}
+.#{$ns}cf:after {
+	clear: both;
+}
+.#{$ns}fl {
+	float: left;
+}
+.#{$ns}fr {
+	float: right;
+}
+.#{$ns}nbfc {
+	overflow: hidden;
+}
+.#{$ns}center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Display */
+.#{$ns}block {
+	display: block !important;
+}
+.#{$ns}inline {
+	display: inline !important;
+}
+.#{$ns}inline-block {
+	display: inline-block !important;
+}
+.#{$ns}hide {
+	display: none !important;
+	visibility: hidden !important;
+}
+/*
+* Remove whitespace between child elements when using `inline-block`
+*/
+.#{$ns}vertical-align {
+	font-size: 0.001px;
+}
+/*
+* The `@{ns}vertical-align` container needs a specific height
+*/
+.#{$ns}vertical-align:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+/*
+* Sub-object which can have any height
+* 1. Reset whitespace hack
+*/
+.#{$ns}vertical-align-middle,
+.#{$ns}vertical-align-bottom {
+	display: inline-block;
+	font-size: 1.6rem;
+	/* 1 */
+	max-width: 100%;
+}
+.#{$ns}vertical-align-middle {
+	vertical-align: middle;
+}
+.#{$ns}vertical-align-bottom {
+	vertical-align: bottom;
+}
+.#{$ns}responsive-width {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
+	height: auto;
+}
+
+//文本颜色
+.#{$ns}text-primary {
+	color: #0e90d2;
+}
+.#{$ns}text-secondary {
+	color: #3bb4f2;
+}
+.#{$ns}text-success {
+	color: #5eb95e;
+}
+.#{$ns}text-warning {
+	color: #f37b1d;
+}
+.#{$ns}text-danger {
+	color: #dd514c;
+}
+
+
+.#{$ns}ellipsis,
+.#{$ns}text-truncate {
+	word-wrap: normal;
+	/* for IE */
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.#{$ns}text-break {
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+.#{$ns}text-nowrap {
+	white-space: nowrap;
+}
+[class*='#{$ns}align-'] {
+	margin-bottom: 1rem;
+}
+.#{$ns}align-left {
+	margin-right: 1rem;
+	float: left;
+}
+.#{$ns}align-right {
+	margin-left: 1rem;
+	float: right;
+}
+
+
+/* Text Image Replacement */
+.#{$ns}text-ir {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+

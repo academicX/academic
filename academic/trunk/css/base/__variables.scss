@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+//命名空间为hy  unquote 作用去掉引号 
+$ns:  unquote("hy-") !default;
+
+
+/* === 全局变量配置 === */
+$base-font-size          : 1.6rem !default; // 字号
+$base-font-family        : "Microsoft YaHei",Tahoma, Arial, "Helvetica Neue", Helvetica, sans-serif !default; // 字体族
+$base-line-height        : 1.5 !default; // 行号
+$base-color              : #333 !default; // 字体颜色
+$base-background-color   : #fff !default; // 背景颜色
+$base-link-color         : #333 #f40 !default; // 链接颜色[default，hover]
+$base-font-weight		 : normal; //大小
+$base-line-height		 : 1.6; //行高
+
+
+

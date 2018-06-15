@@ -1,0 +1,23 @@
+{
+  "name": "1806room_embed",
+  "version": "1.0.0",
+  "category": "web",
+  "projectName": "1806room_embed",
+  "testSVN": "E:/huya/test_dwstatic/hd",
+  "prodSVN": "E:/huya/huya_assets/hd.huya.com",
+  "description": "1806room_embed",
+  "scripts": {
+    "test-w": "fis3 release -wc",
+    "test": "node ./command/release.js",
+    "prod": "node ./command/release.js"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}
